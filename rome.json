@@ -3,12 +3,6 @@
 	"organizeImports": {
 		"enabled": false
 	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
-		}
-	},
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
@@ -16,5 +10,17 @@
 		"indentSize": 4,
 		"lineWidth": 120,
 		"ignore": []
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"all": true,
+			"correctness": {
+				"noUnusedVariables": "error"
+			},
+			"nursery": {
+				"noConsoleLog": "warn"
+			}
+		}
 	}
 }
